@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+     <!-- Header Section (if needed for consistency) -->
+     <header>
+      <nav class="navbar">
+        <div class="logo">
+            <a href="#">VMRS</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+
+        </ul>
+    </nav>
+    </header>
+
+    <!-- Sign-Up Section -->
+    <section class="signup-section">
+        <div class="container">
+            <h2>Create an Account</h2>
+            <p>Join us today to get started with your account.</p>
+
+            <!-- Sign-Up Form -->
+            <form id="signup-section" method="POST" action="signup.php">
+                <div class="form-group">
+                    <label for="username">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+
+            <!-- Error Message (hidden by default) -->
+            <div id="error-message" class="hidden">
+                <p id="error-text"></p>
+            </div>
+
+            <p class="redirect">Already have an account? <a href="login.html">Log in</a></p>
+        </div>
+    </section>
+
+<!-- Footer Section (Optional) -->
+<footer class="footer">
+  <div class="footer-content">
+      <div class="social-links">
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="social-icon linkedin" aria-label="LinkedIn"></a>
+          <a href="https://twitter.com/your-profile" target="_blank" class="social-icon twitter" aria-label="Twitter"></a>
+          <a href="https://github.com/your-profile" target="_blank" class="social-icon github" aria-label="GitHub"></a>
+      </div>
+      <nav class="footer-nav">
+          <a href="#privacy-policy" class="footer-link">Privacy Policy</a>
+          <a href="#terms-of-service" class="footer-link">Terms of Service</a>
+          <a href="#sitemap" class="footer-link">Sitemap</a>
+      </nav>
+  </div>
+  <p>&copy; 2024 Vehicle Maintenance System</p>
+</footer>
+
+</body>
+</html>
