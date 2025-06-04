@@ -24,5 +24,8 @@ jobs:
           npm install
           npx playwright install --with-deps
 
+      - name: Start PHP server
+        run: php -S localhost:3000 -t public &    
+
       - name: Run Playwright tests
         run: npx playwright test
